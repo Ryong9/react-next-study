@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .h-canvas {
+    width: 100%;
+    height: calc(100vh - (12 * 24px));
+  }
+}
+
+@layer components {
+  .canvas {
+    @apply absolute top-0 left-0 w-full h-full;
+  }
+}
